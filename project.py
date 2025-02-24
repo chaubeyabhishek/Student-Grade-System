@@ -26,7 +26,7 @@ top_student = df.loc[df["Average Marks"].idxmax(), "Student"]
 low_scorers = df[df["Average Marks"] < 60]["Student"].tolist()
 print("\n Student Grades Analysis\n")
 print(df)
-print("\n🏆 Top Performer:", top_student)
+print("\n Top Performer:", top_student)
 print(f"\n Students scoring below 60: {', '.join(low_scorers) if low_scorers else 'None'}")
 print("\nSummary Statistics:")
 print(df.describe())
